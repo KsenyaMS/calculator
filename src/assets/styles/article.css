@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: local("MyriadPro"), url(../fonts/Myriad_Pro_Regular.ttf) format("truetype");
+}
+.calculator {
+  background-color: rgb(52, 53, 79);
+  width: 32vw;
+  margin: auto;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.calculator__input-style {
+  width: 90%;
+  height: 55px;
+  border-radius: 4px;
+  margin: 10px 6% 0 4%;
+  padding: 0 0 0 10px;
+  font-family: "MyriadPro-Regular";
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgb(83, 84, 112);
+  border: 1px solid rgb(83, 84, 112);
+}
+
+.calculator__button-group {
+  margin: 10px;
+}
+
+.calculator__button-group__symbol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator__button-group__number {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator__symbol-button, .calculator__number-button {
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 4px;
+  margin: 5px;
+  font-family: "MyriadPro-Regular";
+  font-size: 1.5rem;
+  color: white;
+}
+
+.calculator__symbol-button:hover, .calculator__number-button:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.calculator__number-button {
+  background-color: rgb(83, 84, 112);
+  border: 1px solid rgb(83, 84, 112);
+}
+
+.calculator__symbol-button {
+  background-color: rgb(102, 217, 169);
+  border: 1px solid rgb(102, 217, 169);
+}
+
+@media ((max-width: 1000px) and (min-width: 450px)) {
+  .calculator {
+    width: 65vw;
+  }
+  .calculator__input-style {
+    height: 70px;
+  }
+  .calculator__symbol-button, .calculator__number-button {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
+}
+@media (max-width: 450px) {
+  .calculator {
+    width: 100%;
+  }
+  .calculator__symbol-button, .calculator__number-button {
+    width: 15vw;
+    height: 15vw;
+  }
+}/*# sourceMappingURL=article.css.map */

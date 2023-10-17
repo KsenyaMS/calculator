@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: local("MyriadPro"), url(../fonts/Myriad_Pro_Regular.ttf) format("truetype");
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  padding: 30px 30px 0 0;
+  display: flex;
+  justify-content: right;
+  box-shadow: 0 0 5px black;
+  font-weight: "MyriadPro-Regular";
+  color: white;
+}/*# sourceMappingURL=footer.css.map */
