@@ -41,8 +41,13 @@ export default {
         if (this.firstValue === '') {
           this.result = '';
         }
+        if (this.firstValue !== '' && this.secondValue !== '') {
+          this.secondValue = eval(this.result);
+        }
+        else {
+          this.secondValue = this.firstValue;
+        }
         this.operator = element;
-        this.secondValue = this.firstValue;
         this.firstValue = '';
         this.result = this.secondValue + ' ' + this.operator + ' ';
       }
