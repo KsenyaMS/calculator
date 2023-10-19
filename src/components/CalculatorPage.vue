@@ -30,6 +30,7 @@ export default {
       let elementType = this.calcButtons.find((s) => s === element) ? 'symbol' : 'number';
       if (element === 'C') {
         this.result = '';
+        this.firstValue = '';
       }
       if (element === '=') {
         this.result = eval(this.secondValue + this.operator + this.firstValue);
